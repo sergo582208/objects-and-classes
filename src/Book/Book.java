@@ -2,33 +2,36 @@ package Book;
 
 
 public class Book {
-    public String title;
-    public int yearOfPublication;
+    private String title;
+    private int yearOfPublication;
 
+    private Author author;
 
-    public String name;
-    public int age;
-
-
-    public String getTitle() {
-        return this.title;
+    public Book(String title, int yearOfPublication, Author author) {
+        this.title = title;
+        this.yearOfPublication = yearOfPublication;
+        this.author = author;
     }
 
     public int getYearOfPublication() {
-        return this.yearOfPublication;
+        return yearOfPublication;
     }
 
-    public String getName() {
-        return this.name;
+    public String getTitle() {
+        return title;
 
     }
 
-    public void setYearOfPublication(int age) {
+    public Author getAuthor() {
+        return author;
+    }
+
+
+    public void setYearOfPublication(int yearOfPublication) {
         this.yearOfPublication = yearOfPublication;
     }
 
-    public void age(int i) {
-    }
+
 }
 
 
